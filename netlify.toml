@@ -6,4 +6,4 @@ X-XSS-Protection = "1; mode=block"
 X-Content-Type-Options = "nosniff"
 Strict-Transport-Security = "max-age=63072000; includeSubDomains"
 Content-Security-Policy = "default-src 'self'"
- 
+Referrer-Policy = "strict-origin"
