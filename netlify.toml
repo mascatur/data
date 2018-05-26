@@ -5,5 +5,12 @@ X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
 X-Content-Type-Options = "nosniff"
 Strict-Transport-Security = "max-age=63072000; includeSubDomains"
-Content-Security-Policy = "default-src 'https:';base-uri 'none';frame-ancestors 'none'"
+Content-Security-Policy = "default-src 'https:';base-uri 'self';frame-ancestors 'none';form-action 'self'"
 Referrer-Policy = "strict-origin"
+Header unset Server
+Header always unset X-Powered-By
+Header unset X-Powered-By
+Header unset X-CF-Powered-By
+Header unset X-Mod-Pagespeed
+Header unset X-Pingback
+TraceEnable off
